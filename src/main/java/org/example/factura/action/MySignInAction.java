@@ -8,6 +8,7 @@ import org.openxava.util.Is;
 import org.openxava.util.Users;
 
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -23,9 +24,9 @@ public class MySignInAction
         if (Is.emptyString(userName,password)) {
             addError("unauthorized_user");
         }
-        Query query = XPersistence
+        TypedQuery<Usuario> query = XPersistence
                       .getManager()
-                      .createQuery("Usuario.findUsuario"
+                      .createNamedQuery("Usuario.findUsuario"
                               , Usuario.class);
         query.setParameter(1,userName);
         query.setParameter(2,password);

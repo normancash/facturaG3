@@ -21,5 +21,20 @@
     	</action>
 	</controller>    
     -->
-    
+
+    <controller name="SignIn">
+        <action name="init" on-init="true" hidden="true"
+                class="com.openxava.naviox.actions.InitSignInAction"/>
+        <action name="signIn" label="Entrar"
+                class="org.example.factura.action.MySignInAction"/>
+    </controller>
+    <controller name="FacturaController">
+        <action name="save" mode="detail"
+                by-default="if-possible"
+                class="org.example.factura.SaveAction"
+                image="save.gif"
+                icon="content-save"
+                keystroke="Control S"/>
+    </controller>
+
 </controllers>

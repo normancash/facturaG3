@@ -1,11 +1,15 @@
 org\example\factura\calculator\CalculatorNextNumber.class
+org\example\factura\model\SignIn$ROL.class
 org\example\factura\validator\FacturaValidator.class
 org\example\factura\model\Producto.class
+org\example\factura\model\Usuario.class
 org\example\factura\model\ClienteJuridico.class
 org\example\factura\model\Direccion.class
 org\example\factura\run\Factura.class
 org\example\factura\model\Cliente.class
 org\example\factura\model\Detalle.class
 org\example\factura\model\Categoria.class
+org\example\factura\model\SignIn.class
 org\example\factura\model\ClienteNatural.class
+org\example\factura\action\MySignInAction.class
 org\example\factura\model\Factura.class

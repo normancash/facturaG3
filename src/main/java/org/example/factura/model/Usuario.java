@@ -2,6 +2,7 @@ package org.example.factura.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.openxava.annotations.Password;
 import org.openxava.model.Identifiable;
 
 import javax.persistence.Entity;
@@ -22,6 +23,9 @@ import javax.persistence.Table;
 })
 public class Usuario extends Identifiable {
 
+
     private String usuario;
+
+    @Password
     private String password;
 }
